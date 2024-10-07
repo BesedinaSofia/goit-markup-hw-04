@@ -216,6 +216,14 @@ p {
   width: calc((100% - 3 * 24px) / 4);
 }
 
+.icons {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+}
+
 .description_class_name {
   font-weight: 500;
   font-size: 20px;
@@ -295,6 +303,17 @@ img {
   text-align: center;
 }
 
+.icon {
+  fill: #f4f4fd;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
 .section_four {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -329,6 +348,31 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
   overflow: hidden;
+  position: relative;
+}
+
+.box {
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f51b5;
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.overlay p {
+  color: #fff;
+}
+
+.box:hover .overlay {
+  transform: translateX(0);
 }
 
 .portfolio_title {
@@ -374,4 +418,29 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.socialmedia {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  display: flex;
+}
+
+.iconf {
+  fill: #f4f4fd;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.iconf:hover {
+  background-color: #31d0aa;
 }

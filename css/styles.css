@@ -38,6 +38,20 @@ p {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 
 .link:hover {
@@ -49,6 +63,8 @@ p {
 }
 
 .header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -92,6 +108,7 @@ p {
 
 .link_address {
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link_address:hover,
@@ -183,6 +200,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button_class_name:hover,
@@ -217,11 +235,18 @@ p {
 }
 
 .icons {
+  background: #f4f4fd;
+}
+
+.box-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  background: #f4f4fd;
+  margin-bottom: 8px;
 }
 
 .description_class_name {
@@ -278,7 +303,39 @@ img {
 .team-list .team_page {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   flex-basis: calc((100% - 72px) / 4);
+}
+
+.icon_list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.icon-first {
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon_link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_link:hover {
+  background-color: #404bbf;
+}
+
+.icon_link:focus {
+  background-color: #404bbf;
 }
 
 .pane {
@@ -341,6 +398,11 @@ img {
   width: calc((100% - 48px) / 3);
   padding-left: 0;
   margin: 0;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .thumb {
@@ -413,6 +475,15 @@ img {
   margin-bottom: 16px;
 }
 
+.containerf {
+  display: flex;
+  align-items: baseline;
+}
+
+.boxf {
+  margin-right: 120px;
+}
+
 .footer_text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -428,6 +499,7 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   display: flex;
+  margin-bottom: 16px;
 }
 
 .iconf {

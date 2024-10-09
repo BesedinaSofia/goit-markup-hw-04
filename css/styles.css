@@ -438,7 +438,7 @@ img {
   z-index: 10;
 }
 
-.portfolio-item:hover.o_description {
+.portfolio-item:hover .o_description {
   transform: translateY(0%);
 }
 

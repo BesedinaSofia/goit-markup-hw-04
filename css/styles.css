@@ -359,13 +359,6 @@ img {
 
 .icon {
   fill: #f4f4fd;
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
 }
 
 .section_four {
@@ -464,6 +457,10 @@ img {
   color: #fff;
 }
 
+.logo_footer:after {
+  color: #404bbf;
+}
+
 .link-third {
   font-family: "Releway", sans-serif;
   font-weight: 700;
@@ -521,23 +518,15 @@ img {
 
 .iconf {
   fill: #f4f4fd;
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
+  display: flex;
+  gap: 16px;
 }
 
 .iconf:hover {
   background-color: #31d0aa;
 }
 
-.iconf_link:hover {
-  background-color: #31d0aa;
-}
-
+.iconf_link:hover,
 .iconf_link:focus {
   background-color: #31d0aa;
 }

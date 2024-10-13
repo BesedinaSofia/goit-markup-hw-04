@@ -564,14 +564,12 @@ img {
 
 .bth-subscribe {
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
 
 .bthsub {
   display: flex;
-
   justify-content: center;
 
   border-radius: 4px;
